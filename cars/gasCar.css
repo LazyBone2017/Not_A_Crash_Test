@@ -1,0 +1,96 @@
+
+
+#shellMiddle {
+    width: 205px;
+    height: 90px;
+    left: 70px;
+    top: 0;
+    border-radius: 0 15% 15% 0;
+    background: rgb(25, 45, 100);
+}
+
+#shellFront {
+    width: 100px;
+    height: 120px;
+    right: 0;
+    border-radius: 0 10% 10% 0;
+    background: #bcbcbc;
+}
+
+#shellBack {
+    width: 70px;
+    height: 90px;
+    left: 0;
+    top: 0;
+    border-radius: 10% 0 0 10%;
+    background: rgb(25, 45, 100);
+}
+
+#frontWindow {
+    width: 0px;
+    right: 0;
+}
+
+#extremeFrontWindow {
+    width: 80px;
+    right: 2px;
+}
+
+#backWindow {
+    width: 0px;
+    left: 20px;
+}
+
+#middleWindow {
+    width: 0px;
+    left: 90px;
+}
+
+#frontLight {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: #cbfff7;
+    right: 0;
+    bottom: 15px;
+    border-radius: 0 0 0 20%;
+}
+
+#backLight {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: -moz-linear-gradient(right, #FF6A00, #FF0000);
+    left: 0;
+    bottom: 10px;
+    border-radius: 0 20% 20% 0;
+    border: 1px solid darkslategrey;
+    border-left-width: 0;
+}
+
+[id*="Window"] {
+    height: 30px;
+    top: 20px;
+    position: absolute;
+    background: #416b72;
+    border-radius: 5% 5% 5% 5%;
+}
+
+[id*="shell"] {
+    position: absolute;
+    bottom: 20px;
+}
+
+#brandText {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+    left: 15%;
+    top: 25%;
+    color: white;
+}
+
+

@@ -1,0 +1,79 @@
+
+
+#shellMiddle {
+    height: 100px;
+    width: 210px;
+    left: 70px;
+    border-radius: 5% 5% 0 0;
+}
+
+#shellFront {
+    width: 100px;
+    height: 60px;
+    right: 0;
+    border-radius: 0 10% 10% 0;
+}
+
+#shellBack {
+    width: 70px;
+    height: 70px;
+    left: 0;
+    border-radius: 10% 0 0 10%;
+}
+
+#frontWindow {
+    width: 80px;
+    right: 15px;
+}
+
+#backWindow {
+    width: 0px;
+    left: 20px;
+}
+
+#middleWindow {
+    width: 0px;
+    left: 90px;
+}
+
+#frontLight {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: #BAFFFF;
+    right: 0;
+    top: 4px;
+    border-radius: 0 30% 0 20%;
+}
+
+#backLight {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background: -moz-linear-gradient(right, #FF6A00, #FF0000);
+    left: 0;
+    top: 7px;
+    border-radius: 0 20% 20% 0;
+    border: 1px solid darkslategrey;
+    border-left-width: 0;
+}
+
+[id*="Window"] {
+    height: 30px;
+    top: 10px;
+    position: absolute;
+    background: aqua;
+    border-radius: 5% 5% 5% 5%;
+}
+
+[id*="shell"] {
+    position: absolute;
+    background: firebrick;
+    bottom: 20px;
+}
+
+#brandText {
+    visibility: hidden;
+}
+
+

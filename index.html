@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test</title>
+        <meta charset="UTF-8">
+		<link href="index.css" rel="stylesheet">
+        <link href="./cars/carTemplate.css" rel="stylesheet">
+	</head>
+	<body>
+        <span id="road"></span>
+        <span class = obstacle></span>
+        <span id ="startButton" onclick="toggle()">
+            <span id="startButtonContent">Start!</span>
+        </span>
+        <div id="warningLabel">Jump <b id="warningNumber">4</b> is not available</div>
+        <h1 id="scoreLabel">Score: 0</h1>
+        <span id="progressElements">
+            <span id="startBound"></span>
+            <span id="middleBound"></span>
+            <progress value="100" max="100" id="energy"></progress>
+            <span id="endBound"></span>
+        </span>
+        <audio id="audioMusic" src="sounds/CrashTest.mp3" loop></audio>
+        <audio id="audioSounds" src="sounds/crashSound.ogg"></audio>
+        <span id="blackscreen"></span>
+        <span id="crashedOptions">
+            <span id="crashedOptionsContent">
+                <span id="crashedOptionsHeader">You crashed!</span>
+                <table id="information">
+                    <tr class="informationRow">
+                        <td>Score:</td><td>5000</td>
+                    </tr>
+                    <tr class="informationRow">
+                        <td>Time:</td><td>12.00</td>
+                    </tr>
+                    <tr class="informationRow">
+                        <td>Obstacles skipped:</td><td>5</td>
+                    </tr>
+
+                </table>
+                <span id="outerReplayButton" onclick="restartGame()"><span id="innerReplayButton">Replay</span></span>
+                <span id="outerToMenuButton" onclick="back2Menu()"><span id="innerToMenuButton">Back To Menu</span></span>
+            </span>
+        </span>
+        <script src="cars/carTemplate.js"></script>
+        <script src="index.js"></script>
+	</body>
+</html>
+	

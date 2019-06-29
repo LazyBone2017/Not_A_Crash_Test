@@ -1,0 +1,77 @@
+body {
+    background: url(img/mountains.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.driving {
+    animation: drive;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#outerPlayButton {
+    top: 35%;
+}
+
+#outerSettingsButton {
+    top: 50%;
+}
+
+[id*="outer"] {
+    left: 35%;
+    width: 30%;
+    height: 10%;
+    background: darkgrey;
+    position: absolute;
+    align-content: center;
+    display: table;
+    border: 1px solid black;
+    border-radius: 20%;
+    animation: attract;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+[id*="inner"] {
+    font-family: "Impact", cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px black;
+    color: #CC44FF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border: 2px solid grey;
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    font-family: "Impact", cursive;
+    font-size: 70px;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px black;
+    color: #CC44FF;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #68005E, #AD0022);
+    -webkit-background-clip: text;
+}
+
+
+@keyframes drive  {
+    0% {
+        left: 30%;
+    }
+
+    50% {
+        left: calc(70% - 380px);
+    }
+
+    100% {
+        left: 30%;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link href="settings.css" rel="stylesheet">
+    <link href="cars/carTemplate.css" rel="stylesheet">
+</head>
+<body>
+    <span id="save" onclick="save()"></span>
+    <h1 id="header">Settings</h1>
+    <!--<span id="volumeSettingNode">
+        <span id="defineVolume">Volume</span>
+        <input type="range" min="1" max="100" value="50" id="musicVolumeSlider">
+        <input type="range" min="1" max="100" value="50" id="soundVolumeSlider">
+    </span>-->
+    <span id="backgroundSettingNode">
+    <span class="arrowLeft" onclick="changeBackground('left')"></span>
+    <span id="changeBackground">Background<br></span>
+    <span class="arrowRight" onclick="changeBackground('right')"></span>
+    </span>
+    <span id="carSettingNode">
+    <span class="arrowLeft" onclick="changeCar('left')"></span>
+    <span id="changeCar">Change Car<br></span>
+    <span class="arrowRight" onclick="changeCar('right')"></span>
+    </span>
+    <script src="cars/carTemplate.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>
